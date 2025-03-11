@@ -1,17 +1,16 @@
 /*
  * Copyright (c) 2021 The ZMK Contributors
  *
- * SPDX-License-Identifier: MIT
+ * SPDX-License-Identifier: MIT include <dt-bindings/led/led.h>  zmk,underglow = &led_strip;
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <dt-bindings/led/led.h>
+
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
-        zmk,underglow = &led_strip;
     };
 
     default_transform: keymap_transform_0 {
@@ -71,6 +70,7 @@
 
 };
 
+\*
 &pinctrl {
 
     spi3_default: spi3_default {
@@ -86,11 +86,13 @@
         };
     };
 };
+*/
 
 &uart0 {
 	status = "disabled";
 };
 
+/*
 &spi3 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
@@ -104,15 +106,15 @@
 		compatible = "worldsemi,ws2812-spi";
 		label = "WS2812";
 
-		/* SPI */
-		reg = <0>; /* ignored, but necessary for SPI bindings */
+		/* SPI *
+		reg = <0>; /* ignored, but necessary for SPI bindings *
 		spi-max-frequency = <4000000>;
 
-		/* WS2812 */
-		chain-length = <1>; /* There are per-key RGB, but the first 6 are underglow */
+		/* WS2812 *
+		chain-length = <1>; /* There are per-key RGB, but the first 6 are underglow *
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
 		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
 	};
 };
-
+*/

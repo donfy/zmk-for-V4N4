@@ -58,34 +58,34 @@
             key-positions = <22 23>;
         };
 
-        par {
-            bindings = <&kp LPAR>;
+        semi {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <34 35>;
+        };
+
+        sqt {
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <35 36>;
         };
 
-        rpar {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <36 37>;
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <48 49>;
         };
 
-        brc {
-            bindings = <&kp LBRC>;
+        dot {
+            bindings = <&kp PERIOD>;
             key-positions = <49 50>;
-        };
-
-        rbrc {
-            bindings = <&kp RBRC>;
-            key-positions = <50 51>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <21 23>;
         };
 
         blsh {
             bindings = <&kp BSLH>;
-            key-positions = <49 51>;
+            key-positions = <21 23>;
+        };
+
+        fslh {
+            bindings = <&kp SLASH>;
+            key-positions = <48 50>;
         };
     };
 
@@ -96,7 +96,7 @@
             bindings = <
 &kp ESC       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS          &kp EQUAL           &kp BACKSPACE
 &kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T         &kp Y         &kp U         &kp I         &kp O         &kp P         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
-&mo 1         &kp A         &kp S         &kp D         &kp F         &kp G         &kp H         &kp J         &kp K         &kp L         &kp SEMI      &kp SINGLE_QUOTE   &kp BACKSLASH       &kp ENTER
+&mo 1         &kp A         &kp S         &kp D         &kp F         &kp G         &kp H         &kp J         &kp K         &kp L         &kp SQT      &kp SINGLE_QUOTE   &kp BACKSLASH       &kp ENTER
 &kp LSHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N         &kp M         &kp COMMA     &kp PERIOD    &kp SLASH     &trans             &kp UP
 &kp LCTRL     &kp CAPSLOCK  &kp LALT      &kp LEFT_GUI                &kp SPACE     &mo 1                                     &trans                      &kp LEFT           &kp DOWN            &kp RIGHT
             >;

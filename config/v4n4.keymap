@@ -12,7 +12,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
+  /*  behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -43,49 +43,49 @@
             tapping-term-ms = <135>;
             quick-tap-ms = <0>;
         };
-    };
+    }; */
 
     combos {
         compatible = "zmk,combos";
 
         bkt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <9 10>;
+            key-positions = <21 22>;
         };
 
         rbkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <13 14>;
+            key-positions = <22 23>;
         };
 
         par {
             bindings = <&kp LPAR>;
-            key-positions = <21 22>;
+            key-positions = <35 36>;
         };
 
         rpar {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <25 26>;
+            key-positions = <36 37>;
         };
 
         brc {
             bindings = <&kp LBRC>;
-            key-positions = <33 34>;
+            key-positions = <49 50>;
         };
 
         rbrc {
             bindings = <&kp RBRC>;
-            key-positions = <37 38>;
+            key-positions = <50 51>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <11 12>;
+            key-positions = <21 23>;
         };
 
         blsh {
             bindings = <&kp BSLH>;
-            key-positions = <23 24>;
+            key-positions = <49 51>;
         };
     };
 
@@ -94,11 +94,11 @@
 
         Qwery {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&kp ESC       &kp Q         &kp W         &kp E         &kp R         &kp T         &kp Y     &kp U     &kp I      &kp O       &kp P     &kp BSPC   &kp NUMBER_7   &kp NUMBER_8
-&kp TAB       &kp A         &kp S         &kp D         &kp F         &kp G         &kp H     &kp J     &kp K      &kp L       &kp SEMI  &kp ENTER
-&kp LSHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N     &kp M     &kp COMMA  &kp PERIOD  &kp UP    &kp DELETE
-&kp LCTRL     &kp LWIN      &kp LALT      &lt 1 SPACE   &lt 2 SPACE   &kp RALT      &kp LEFT  &kp DOWN  &kp RIGHT
+&kp ESC       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS          &kp EQUAL           &kp BACKSPACE
+&kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T         &kp Y         &kp U         &kp I         &kp O         &kp P         &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+&mo 1         &kp A         &kp S         &kp D         &kp F         &kp G         &kp H         &kp J         &kp K         &kp L         &kp SEMI      &kp SINGLE_QUOTE   &kp BACKSLASH       &kp ENTER
+&kp LSHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N         &kp M         &kp COMMA     &kp PERIOD    &kp SLASH     &trans             &kp UP
+&kp LCTRL     &kp CAPSLOCK  &kp LALT      &kp LEFT_GUI                &kp SPACE     &mo 1                                     &trans                      &kp LEFT           &kp DOWN            &kp RIGHT
             >;
 
             label = "Qwery";
@@ -106,31 +106,25 @@
 
         layer_1 {
             bindings = <
-&ext_power EP_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans           &trans
-&trans             &kp NUMBER_1     &kp N2           &kp NUMBER_3     &kp NUMBER_4     &kp N5  &kp NUMBER_6  &kp N7     &kp N8     &kp N9  &kp NUMBER_0  &trans &trans  &trans
-&trans             &trans           &trans           &trans           &trans           &trans  &kp MINUS     &kp EQUAL  &kp GRAVE  &trans  &kp SQT       &trans
-&trans             &trans           &trans           &trans           &trans           &trans  &trans        &trans     &trans     &trans  &trans        &trans
-&trans             &trans           &trans           &trans           &kp RIGHT_SHIFT  &trans  &trans        &trans     &trans
+&kp GRAVE     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9         &kp F10      &kp F11    &kp F12        &kp DELETE
+&kp TAB       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans         &trans       &trans     &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans         &trans       &trans     &trans         &trans
+&kp LSHIFT    &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans         &trans       &tog 2     &kp PAGE_UP
+&kp LCTRL     &kp CAPSLOCK  &kp LALT      &kp LEFT_GUI                &trans        &trans                                    &trans                      &kp HOME   &kp PAGE_DOWN  &kp END
             >;
         };
+/*
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&bt BT_CLR_ALL
+*/
 
         layer_2 {
             bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp KP_MULTIPLY      &kp KP_DIVIDE  &trans          &kp KP_MINUS     &kp KP_PLUS   &kp BACKSPACE
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp KP_N7            &kp KP_N8      &kp KP_N9       &trans           &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp KP_N4            &kp KP_N5      &kp KP_N6       &trans           &trans        &kp ENTER
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp KP_N1            &kp KP_N2      &kp KP_N3       &tog 0           &trans
+&trans    &trans    &trans    &trans              &trans    &trans                                   &kp KP_N0                      &trans           &trans         &trans
             >;
         };
     };

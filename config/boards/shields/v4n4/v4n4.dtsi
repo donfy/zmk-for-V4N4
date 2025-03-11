@@ -5,12 +5,13 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-
+#include <dt-bindings/led/led.h>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,underglow = &led_strip;
     };
 
     default_transform: keymap_transform_0 {
@@ -92,7 +93,6 @@
 	status = "disabled";
 };
 
-/*
 &spi3 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
@@ -117,5 +117,4 @@
 		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
 	};
 };
-*/
 

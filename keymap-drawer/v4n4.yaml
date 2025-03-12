@@ -33,7 +33,7 @@ layers:
   - S
   - D
   - F
-  - G
+  - '&pwrbtn'
   - H
   - J
   - K

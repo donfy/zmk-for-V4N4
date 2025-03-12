@@ -33,7 +33,7 @@ layers:
   - S
   - D
   - F
-  - '&pwrbtn'
+  - {t: '&trans', h: '&soft_off'}
   - H
   - J
   - K

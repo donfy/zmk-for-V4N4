@@ -33,7 +33,7 @@ layers:
   - S
   - D
   - F
-  - {t: '&trans', h: '&soft_off'}
+  - G
   - H
   - J
   - K

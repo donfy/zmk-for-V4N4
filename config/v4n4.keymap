@@ -68,6 +68,16 @@
             key-positions = <22 23>;
         };
 
+        /*  - = */
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <30 31>;
+        };
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <31 32>;
+        };
+
         semi {
             bindings = <&kp SEMICOLON>;
             key-positions = <34 35>;
@@ -80,22 +90,20 @@
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <48 49>;
+            key-positions = <34 47>;
         };
-
         dot {
             bindings = <&kp PERIOD>;
-            key-positions = <49 50>;
+            key-positions = <34 48>;
+        };
+        fslh {
+            bindings = <&kp SLASH>;
+            key-positions = <47 48>;
         };
 
         blsh {
             bindings = <&kp BSLH>;
             key-positions = <21 23>;
-        };
-
-        fslh {
-            bindings = <&kp SLASH>;
-            key-positions = <48 50>;
         };
     };
 

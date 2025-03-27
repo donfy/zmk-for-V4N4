@@ -129,7 +129,7 @@
 &kp TAB       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans         &trans       &trans     &trans
 &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans         &trans       &trans     &trans         &trans
 &kp LSHIFT    &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans         &trans       &trans     &kp PAGE_UP
-&kp LCTRL     &kp CAPSLOCK  &kp LALT      &kp LEFT_GUI                &trans        &trans                                    &tog 2                      &kp HOME   &kp PAGE_DOWN  &kp END
+&kp LCTRL     &kp CAPSLOCK  &kp LALT      &kp LEFT_GUI                &trans        &trans                      &tog 2                                    &kp HOME   &kp PAGE_DOWN  &kp END
             >;
         };
 /*
@@ -142,8 +142,8 @@
 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp KP_MULTIPLY      &kp KP_DIVIDE  &trans          &kp KP_MINUS     &kp KP_PLUS   &kp BACKSPACE
 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp KP_N7            &kp KP_N8      &kp KP_N9       &trans           &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp KP_N4            &kp KP_N5      &kp KP_N6       &trans           &trans        &kp ENTER
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp KP_N1            &kp KP_N2      &kp KP_N3       &trans           &trans
-&trans    &trans    &trans    &trans              &trans    &trans                                   &kp KP_N0                      &trans           &trans         &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp KP_N1            &kp KP_N2      &kp KP_N3       &tog 2           &trans
+&trans    &trans    &trans    &trans              &trans    &trans              &kp KP_N0                                           &trans           &trans         &trans
             >;
         };
     };

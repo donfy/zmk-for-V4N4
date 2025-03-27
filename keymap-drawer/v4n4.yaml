@@ -118,7 +118,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '2', h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-caps$$
@@ -126,7 +126,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '2', h: toggle}
   - HOME
   - PgDn
   - END
@@ -183,7 +183,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - {t: Qwery, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
